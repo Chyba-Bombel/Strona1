@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Verdana;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: 0.1px solid black
+
+
+        }
+
+        form {
+            background-color: yellow;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 97%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+
+        nav ul li {
+
+
+
+            display: inline-block;
+            margin-right: 15px;
+
+
+        }
+
+        nav ul li a {
+            text-decoration: underline;
+            padding: 25px 35px;
+            display: inline-block;
+            border-radius: 15px;
+            transition: padding 2s, 4s;
+        }
+
+        nav ul li a:hover {
+            color: brown;
+            transform: scale(1.2);
+
+        }
+
+        footer {
+            text-align: center;
+            background-color: blueviolet;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Kacper-Stolarek1TP.html">Strona główna</a></li>
+        </ul>
+
+
+    </nav>
+    <h1>Wypełnij Formularz!</h1>
+    <p>Zachęcam cie do wypełnienia opcjonalnego formularzu który pozwoli nam przeprowadzić badanie ogólnopolskie na
+        temat ile średnio polacy posiadają zwierząt domowych.<br> Państwa dane udostępniane u nas są chronione przez <a
+            href="Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016_679 z dnia 27 kwietnia .pdf">RODO</a></p>
+    <form action="#">
+        Imię:*<br>
+        <input type="text" name="imie" required><br>
+        Nazwisko:*<br>
+        <input type="text" name="nazwisko" required><br>
+        Płeć:*<br>
+        <select required>
+            <option>Mężczyzna</option>
+            <option>Kobieta</option>
+            <option>Wole nie podawać</option>
+        </select><br>
+        Adres E-mail:*<br>
+        <input type="email" name="e-mail" required><br>
+        Wiek:*<br>
+        <input type="number" name="wiek" min="13" required>
+        Województwo:*<br>
+        <select required>
+            <option>Łódzkie</option>
+            <option>Mazowieckie</option>
+            <option>Pomorskie</option>
+            <option>Zachodnio-Pomorskie</option>
+            <option>Warmińsko-Mazurskie</option>
+            <option>Podlaskie</option>
+            <option>Lubelskie</option>
+            <option>Lubuskie</option>
+            <option>Dolnośląskie</option>
+            <option>Opolskie</option>
+            <option>Śląskie</option>
+            <option>Podkarpackie</option>
+            <option>Świetokrzyskie</option>
+            <option>Małopolskie</option>
+            <option>Wielkopolskie</option>
+            <option>Kujawsko-Pomorskie</option>
+        </select><br>
+        Ile posiadasz zwierzaków?:*<br>
+        <input type="number" name="Ile-masz-zwierzaków" min="1" required><br>
+        Opisz swoje wrażenia ze zwierzętami domowymi(Od 20 do 1000 znaków):^<br>
+        <textarea minlength="20" maxlength="1000"></textarea>
+        Akceptuje <a href="Regulamin.docx">Regulamin</a> i Warunki Formularza i Oświadczam że mam ukończone 18 lat lub ukończone 13 ze zgodą rodzica lub opiekuna prawnego i przebywasz na terenie polski*
+        <input type="checkbox" name="checkbox" required><br>
+        Prześlij:* <br>
+        <input type="submit" name="przycisk-przeslij"> <br>
+        * - Wymagana odpowiedź<br>
+        ^ - Opcjonalna odpowiedź(Nie jest wymagana do presłania formularza)
+
+
+
+    </form>
+    <footer>
+        <h6>Opracowal Kacper Stolarek</h6>
+    </footer>
+
+</body>
+
+</html>
